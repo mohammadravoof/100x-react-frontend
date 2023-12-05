@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Fieldset({text,input,icon}) {
   return (
@@ -11,4 +12,10 @@ function Fieldset({text,input,icon}) {
 )
 }
 
+Fieldset.propTypes = {
+  text: PropTypes.string.isRequired,
+  input: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  
+}
 export default Fieldset

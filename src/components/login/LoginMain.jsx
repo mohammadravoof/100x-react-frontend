@@ -1,11 +1,12 @@
 import Button from "../ui/Button";
+import { useNavigate } from "react-router-dom";
 // import { AuthContext } from "../../context/AuthContext";
 // import { useContext } from "react";
 
 function LoginMain() {
 
     // const { setIsLoggedIn } = useContext(AuthContext);
-
+    const navigate = useNavigate();
   return (
     
       
@@ -14,7 +15,7 @@ function LoginMain() {
             <div className="font-extrabold text-[31px] text-neutral-50">Happening now</div>
             <h3 className="text-base font-medium text-neutral-50">Join today.</h3>
           </div>
-          <Button variant="default">Create Account</Button>
+          <Button variant="default" onClick={() => navigate("/100x-react-frontend/Step1")}>Create Account</Button>
           <div className="flex justify-center items-center gap-1 self-stretch">
             <div className="w-[155.5px] h-[1px] bg-neutral-700" />
             <div className="text-neutral-50">or</div>
@@ -22,7 +23,7 @@ function LoginMain() {
           </div>
           <div className="flex flex-col items-start gap-5 self-stretch">
             <p className="text-neutral-50 text-[15px]">Already have an account?</p>
-            <Button variant="outline" >Sign in</Button>
+            <Button variant="outline" onClick={() => navigate("/100x-react-frontend/Homefeed")} >Sign in</Button>
           </div>
         </div>
 

@@ -1,26 +1,10 @@
 import React from 'react'
-import x from '../../assets/signup-x.svg'
-import Button from '../../components/ui/Button'
-import Fieldset from '../../components/ui/Fieldset'
-function Step1() {
-  return (
+import chevrondown from '../../assets/chevron-down.svg'
 
-    <div className="w-[390px] h-[868px] shrink-0 bg-neutral-1000 font-inter">
-  
-  <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
-    <div className="flex py-3 px-0 items-center gap-5 self-stretch">
-      <button><a href="https://100x-engineers.github.io/layouts-assignment-mohammadravoof/src/login/index.html"><img src={x} /></a></button>
-      <p className="text-neutral-50 text-[15px] font-bold ">Step 1 of 4</p>
-    </div>
-    <div className="flex flex-col items-start gap-5 self-stretch text-neutral-50 text-2xl font-bold">Create your account</div> 
-    <div className="flex flex-col items-center gap-8 self-stretch">
-    <Fieldset text="Name" input="Name"/>
-    <Fieldset text="Email" input="Email"/>
-      <div className="flex flex-col items-start gap-2 self-stretch">
-        <div className="text-neutral-50 text-[15px] font-bold">Date of birth</div>
-        <div className="self-stretch text-secondary text-sm/normal  ">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or <br /> something else.</div>
-      </div>
-      <div className="flex w-[360px] items-center gap-3 self-stretch">
+
+function Dobfetcher() {
+  return (
+    <div className="flex w-[360px] items-center gap-3 self-stretch">
         <div className="flex w-[171px] relative items-center self-stretch group border border-neutral-500 focus-within:border-twitter-blue-default rounded py-4 px-3 justify-between">
           <select className="peer relative grow appearance-none bg-transparent text-neutral-50 focus:outline-none">
             <option />
@@ -38,7 +22,7 @@ function Step1() {
             <option>December</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Month</div>
-          <img className src="../../public/images/chevron-down.svg" />
+          <img className src={chevrondown} />
         </div>
         <div className="flex w-[82.5px] relative  items-center self-stretch group border border-neutral-500 focus-within:border-twitter-blue-default rounded py-4 px-3 justify-between">
           <select className="peer relative grow appearance-none bg-transparent text-neutral-50 focus:outline-none">
@@ -76,7 +60,7 @@ function Step1() {
             <option>31</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Day</div>
-          <img className src="../../public/images/chevron-down.svg" />
+          <img className src={chevrondown} />
         </div>
         <div className="flex w-[86px] relative items-center self-stretch group border border-neutral-500 focus-within:border-twitter-blue-default rounded py-4 px-3 justify-between">
           <select className="peer relative grow appearance-none bg-transparent text-neutral-50 focus:outline-none">
@@ -116,16 +100,10 @@ function Step1() {
             <option>1974</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Year</div>
-          <img className src="../../public/images/chevron-down.svg" />
+          <img className src={chevrondown} />
         </div>
-      </div>
-    </div>
-    <div className="flex pt-20 px-5 pb-0 flex-col justify-end items-center gap-[10px] self-stretch grow shrink-0 basis-0">
-    <Button variant="white">Create account</Button>
-    </div>
-  </div>
-</div>
+        </div>
   )
 }
 
-export default Step1
+export default Dobfetcher
