@@ -9,11 +9,7 @@ import UserProfile from "./pages/user-profile/UserProfile"
 import EditProfile from "./pages/user-profile/EditProfile"
 import { useState, useContext } from "react"
 // import { AuthProvider, AuthContext } from "./context/AuthProvider"
-import {
-  createBrowserRouter,
-  RouterProvider,
-  
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 
 const router = createBrowserRouter([
@@ -68,7 +64,9 @@ function App() {
     
       
     //  </div>
+    <div className="flex items-center justify-center w-screen bg-neutral-1000">
     <RouterProvider router={router} />
+    </div>
     // </AuthProvider>
   )
 }

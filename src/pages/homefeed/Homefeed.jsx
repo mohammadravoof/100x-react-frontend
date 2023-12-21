@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom";
 function Homefeed() {
   const navigate = useNavigate();
   return (
-    <div className="w-[390px] shrink-0 bg-neutral-1000 font-inter ">
+    <div className=" w-[390px] h-full shrink-0 bg-neutral-1000 font-inter ">
   <header className="flex sticky flex-col items-center justify-center top-0 bg-neutral-1000">
     
     <div className="flex w-[390px] py-3 px-4 items-center gap-32 border-b-[1px] border-neutral-700">
@@ -49,11 +49,11 @@ function Homefeed() {
       
     </div>
   </main>
-  <button className="inline-flex py-3 px-8 justify-center items-center gap-[10px] fixed bottom-[72px] left-[90px] rounded-[100px] bg-searchbar-fill text-[15px] leading-normal text-neutral-50">Copied to clipboard.</button>
+  <button className="fixed inline-flex py-3 px-8 ml-[90px] justify-center items-center gap-[10px] bottom-[72px] rounded-[100px] bg-searchbar-fill text-[15px] leading-normal text-neutral-50">Copied to clipboard.</button>
   {/* <a href="https://100x-engineers.github.io/layouts-assignment-mohammadravoof/src/compose-tweet/index.html"> */}
-    <button className="fixed inline-flex bottom-[72px] left-[304px] p-4 items-start gap-[10px] rounded-[32px] bg-twitter-blue-default shadow-[0_8px_16px_0_rgba(0,0,0,0.25)]" onClick={() => navigate("/100x-react-frontend/ComposeTweet")}><img src={plus} alt="plus" /></button>
+    <button className="fixed inline-flex bottom-[72px] p-4 ml-[304px] items-start gap-[10px] rounded-[32px] bg-twitter-blue-default shadow-[0_8px_16px_0_rgba(0,0,0,0.25)]" onClick={() => navigate("/100x-react-frontend/ComposeTweet")}><img src={plus} alt="plus" /></button>
     {/* </a> */}
-  <div className="flex fixed bottom-0 w-[390px] h-[60px] py-[18px] px-6 justify-center items-center gap-10 border-t-[1px] border-neutral-800 bg-neutral-1000">
+  <div className=" flex fixed bottom-0 w-[390px] h-[60px] py-[18px] px-6 justify-center items-center gap-10 border-t-[1px] border-neutral-800 bg-neutral-1000">
     <button className="flex flex-col relative group items-center justify-center  w-6 h-6" >
       <img className="absolute visible group-focus:invisible" src={statenotselected} />
       <img className="absolute invisible group-focus:visible " src={stateselected} />

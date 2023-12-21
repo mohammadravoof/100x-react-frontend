@@ -16,7 +16,7 @@ function UserProfile() {
     <div className="w-[390px] h-full shrink-0 bg-neutral-1000 font-inter ">
   
   <div className="static z-0 w-[390px] h-[150px] shrink-0" style={{backgroundImage: 'url(../../public/images/profile-background-image.png)'}} />
-  <img className="absolute z-10 top-[159px] left-5 rounded-[200px] border- border-neutral-1000" src={profileavatar} alt />
+  <img className="absolute z-10 top-[159px] ml-5 rounded-[200px] border- border-neutral-1000" src={profileavatar} alt />
 <button className="mt-2 ml-[253px] inline-flex py-2 px-5 justify-center items-center gap-[10px] rounded-[30px] border border-stroke text-neutral-50 font-medium" onClick={() => navigate("/100x-react-frontend/EditProfile")}>Edit profile</button>
   <div className="ml-5 flex w-[354px] flex-col justify-end items-start gap-4">
     <div className="flex flex-col justify-end items-start gap-1">
@@ -52,7 +52,7 @@ function UserProfile() {
       <Tweetbox avatar={avatar3} name="Name" handle="@handle • 10h" tweettext="" comment="11"  retweet="270" like="1869" >if you work in tech and your colleagues use the term "tech bro" as a pejorative / unironically, you should start looking for your next job</Tweetbox>
       
     
-<button className="fixed inline-flex bottom-[36px] left-[304px] p-4 items-start gap-[10px] rounded-[32px] bg-twitter-blue-default shadow-[0_8px_16px_0_rgba(0,0,0,0.25)]" onClick={() => navigate("/100x-react-frontend/ComposeTweet")}><img src={plus} alt="plus" /></button>
+<button className="fixed inline-flex bottom-[36px] ml-[304px] p-4 items-start gap-[10px] rounded-[32px] bg-twitter-blue-default shadow-[0_8px_16px_0_rgba(0,0,0,0.25)]" onClick={() => navigate("/100x-react-frontend/ComposeTweet")}><img src={plus} alt="plus" /></button>
 </div>
 
   )

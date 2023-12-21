@@ -10,7 +10,7 @@ function Step1() {
   const navigate = useNavigate();
   return (
 
-    <div className="w-[390px] h-[868px] shrink-0 bg-neutral-1000 font-inter">
+    <div className="flex items-center w-[390px] h-screen shrink-0 bg-neutral-1000 font-inter">
   
   <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
     <Steps onClick={() => navigate("/100x-react-frontend/")}>1</Steps>
