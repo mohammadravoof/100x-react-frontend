@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function Step3() {
   const navigate = useNavigate();
   return (
-    <div className="flex items-center w-[390px] h-screen shrink-0 bg-neutral-1000 font-inter">
+    <div className="flex items-center w-[390px] h-screen m-10 shrink-0 bg-neutral-1000 font-inter">
   <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
     <Steps onClick={() => navigate("/100x-react-frontend/Step2")}>3</Steps>
     <div className="flex flex-col items-start gap-10 self-stretch">
@@ -18,7 +18,7 @@ function Step3() {
         <p className="text-twitter-blue-default text-sm/normal">Didn't receive a code?</p>
       </div>
     </div>
-    <div className="flex pt-20 flex-col justify-end items-center gap-5 self-stretch grow shrink-0 basis-0">
+    <div className="flex py-20 flex-col justify-end items-center gap-5 self-stretch grow shrink-0 basis-0">
     <Button variant="white" onClick={() => navigate("/100x-react-frontend/Step4")}>Next</Button>
     </div>
   </div>

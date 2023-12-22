@@ -10,7 +10,7 @@ function Step1() {
   const navigate = useNavigate();
   return (
 
-    <div className="flex items-center w-[390px] h-screen shrink-0 bg-neutral-1000 font-inter">
+    <div className="flex items-center w-[390px] h-screen m-10 shrink-0 bg-neutral-1000 font-inter">
   
   <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
     <Steps onClick={() => navigate("/100x-react-frontend/")}>1</Steps>
@@ -25,7 +25,7 @@ function Step1() {
       <Dobfetcher />
 
     </div>
-    <div className="flex pt-20 px-5 pb-0 flex-col justify-end items-center gap-[10px] self-stretch grow shrink-0 basis-0">
+    <div className="flex py-20 px-5 flex-col justify-end items-center gap-[10px] self-stretch grow shrink-0 basis-0">
     <Button variant="white" onClick={() => navigate("/100x-react-frontend/Step2")}>Create account</Button>
     </div>
   </div>

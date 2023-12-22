@@ -1,5 +1,5 @@
 import React from 'react'
-import bgimage from '../../assets/profile-background-image.png'
+import background from '../../assets/profile-background-image.png'
 import profileavatar from '../../assets/profile-avatar.png'
 import linkicon from '../../assets/link-icon.svg'
 import calendericon from '../../assets/calendar-icon.svg'
@@ -15,8 +15,9 @@ function UserProfile() {
   return (
     <div className="w-[390px] h-full shrink-0 bg-neutral-1000 font-inter ">
   
-  <div className="static z-0 w-[390px] h-[150px] shrink-0" style={{backgroundImage: 'url(../../public/images/profile-background-image.png)'}} />
-  <img className="absolute z-10 top-[159px] ml-5 rounded-[200px] border- border-neutral-1000" src={profileavatar} alt />
+  <div className="static z-0 w-[390px] h-[80px] shrink-0" />
+  <img src={background} alt="banner image" />
+  <img className="absolute z-10 top-[189px] ml-5 rounded-[200px] border- border-neutral-1000" src={profileavatar} alt />
 <button className="mt-2 ml-[253px] inline-flex py-2 px-5 justify-center items-center gap-[10px] rounded-[30px] border border-stroke text-neutral-50 font-medium" onClick={() => navigate("/100x-react-frontend/EditProfile")}>Edit profile</button>
   <div className="ml-5 flex w-[354px] flex-col justify-end items-start gap-4">
     <div className="flex flex-col justify-end items-start gap-1">

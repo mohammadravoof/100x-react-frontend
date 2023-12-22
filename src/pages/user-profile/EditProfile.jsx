@@ -4,6 +4,7 @@ import arrowleft from '../../assets/arrow-left.svg'
 import cameraicon from '../../assets/camera-icon.svg'
 import x from '../../assets/x-icon.svg'
 import editprofilesourceimage from '../../assets/edit-profile-source-image.png'
+import background from '../../assets/edit-profile-background.png'
 import Fieldset from '../../components/ui/Fieldset'
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +22,8 @@ function EditProfile() {
 <button className="flex px-5 py-2 justify-center items-center gap-[10px] rounded-[30px] bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500 shadow-[0_8px_16px_0_rgba(0,0,0,0.25)] backdrop-blur-[23.668209075927734px]" onClick={() => navigate("/100x-react-frontend/UserProfile")}><span className="font-bold text-sm/normal text-neutral-1000">Save</span></button>
     </div>
     <div className="flex flex-col items-start gap-3 self-stretch">
-      <div className="z-0 relative w-[358px] h-[200px] shrink-0" style={{background: 'url(../../public/images/edit-profile-background.png)'}}>
+      <div className="z-0 relative w-[358px] h-[200px] shrink-0" >
+        <img className="w-full " src={background} alt="banner image" />
         {/* <img class="absolute top-[132px] left-[6px] " src="../../public/images/edit-profile-avatar.png" alt="profile-avatar"> */}
         <div className="inline-flex h-[88px] w-[88px] absolute top-[132px] left-[6px] justify-center items-center  rounded-[200px] border-[4px] border-neutral-1000 "><img className="rounded-[200px]" src={editprofilesourceimage} alt="profile-image" /><button className="absolute flex p-1 justify-center items-center gap-[10px] rounded-[1000px] bg-black bg-opacity-60 "><img src={cameraicon} alt="camera-icon" /></button></div>
         <div className="flex items-start gap-2 absolute left-[143px] top-[84px]">
