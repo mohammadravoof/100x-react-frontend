@@ -14,39 +14,39 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/100x-react-frontend/",
+    path: "/",
     element: <Login/>,
   },
   {
-    path: "/100x-react-frontend/Step1",
+    path: "/Step1",
     element: <Step1/>,
   },
   {
-    path: "/100x-react-frontend/Step2",
+    path: "/Step2",
     element: <Step2/>,
   },
   {
-    path: "/100x-react-frontend/Step3",
+    path: "/Step3",
     element: <Step3/>,
   },
   {
-    path: "/100x-react-frontend/Step4",
+    path: "/Step4",
     element: <Step4/>,
   },
   {
-    path: "/100x-react-frontend/Homefeed",
+    path: "/Homefeed",
     element: <Homefeed/>,
   },
   {
-    path: "/100x-react-frontend/ComposeTweet",
+    path: "/ComposeTweet",
     element: <ComposeTweet/>,
   },
   {
-    path: "/100x-react-frontend/UserProfile",
+    path: "/UserProfile",
     element: <UserProfile/>,
   },
   {
-    path: "/100x-react-frontend/EditProfile",
+    path: "/EditProfile",
     element: <EditProfile/>,
   },
 ]);

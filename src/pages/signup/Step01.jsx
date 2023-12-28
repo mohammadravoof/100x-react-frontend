@@ -13,7 +13,7 @@ function Step1() {
     <div className="flex items-center w-[390px] h-screen m-10 shrink-0 bg-neutral-1000 font-inter">
   
   <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
-    <Steps onClick={() => navigate("/100x-react-frontend/")}>1</Steps>
+    <Steps onClick={() => navigate("/")}>1</Steps>
     <HeadingOfCreateAccout text="Create your account"></HeadingOfCreateAccout> 
     <div className="flex flex-col items-center gap-8 self-stretch">
     <Fieldset text="Name" input="Name"/>
@@ -26,7 +26,7 @@ function Step1() {
 
     </div>
     <div className="flex py-20 px-5 flex-col justify-end items-center gap-[10px] self-stretch grow shrink-0 basis-0">
-    <Button variant="white" onClick={() => navigate("/100x-react-frontend/Step2")}>Create account</Button>
+    <Button variant="white" onClick={() => navigate("/Step2")}>Create account</Button>
     </div>
   </div>
 </div>

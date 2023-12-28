@@ -16,10 +16,10 @@ function EditProfile() {
   <div className="flex w-[390px] py-0 px-4 flex-col items-start gap-3">
     <div className="flex py-3 px-0 justify-between items-center self-stretch">
       <div className="flex items-center gap-5">
-<button onClick={() => navigate("/100x-react-frontend/UserProfile")}><img src={arrowleft} alt="arrow" /></button>
+<button onClick={() => navigate("/UserProfile")}><img src={arrowleft} alt="arrow" /></button>
         <p className="text-neutral-50 font-bold">Edit profile</p>
       </div>
-<button className="flex px-5 py-2 justify-center items-center gap-[10px] rounded-[30px] bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500 shadow-[0_8px_16px_0_rgba(0,0,0,0.25)] backdrop-blur-[23.668209075927734px]" onClick={() => navigate("/100x-react-frontend/UserProfile")}><span className="font-bold text-sm/normal text-neutral-1000">Save</span></button>
+<button className="flex px-5 py-2 justify-center items-center gap-[10px] rounded-[30px] bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500 shadow-[0_8px_16px_0_rgba(0,0,0,0.25)] backdrop-blur-[23.668209075927734px]" onClick={() => navigate("/UserProfile")}><span className="font-bold text-sm/normal text-neutral-1000">Save</span></button>
     </div>
     <div className="flex flex-col items-start gap-3 self-stretch">
       <div className="z-0 relative w-[358px] h-[200px] shrink-0" >
