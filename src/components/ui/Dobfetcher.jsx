@@ -22,7 +22,7 @@ function Dobfetcher() {
             <option>December</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Month</div>
-          <img className src={chevrondown} />
+          <img src={chevrondown} />
         </div>
         <div className="flex w-[82.5px] relative  items-center self-stretch group border border-neutral-500 focus-within:border-twitter-blue-default rounded py-4 px-3 justify-between">
           <select className="peer relative grow appearance-none bg-transparent text-neutral-50 focus:outline-none">
@@ -60,7 +60,7 @@ function Dobfetcher() {
             <option>31</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Day</div>
-          <img className src={chevrondown} />
+          <img src={chevrondown} />
         </div>
         <div className="flex w-[86px] relative items-center self-stretch group border border-neutral-500 focus-within:border-twitter-blue-default rounded py-4 px-3 justify-between">
           <select className="peer relative grow appearance-none bg-transparent text-neutral-50 focus:outline-none">
@@ -100,7 +100,7 @@ function Dobfetcher() {
             <option>1974</option>
           </select>
           <div className="absolute inline-flex items-center justify-center px-1 py-0 -top-2 text-xs/normal font-medium text-neutral-500  bg-neutral-1000 peer-focus:text-twitter-blue-default ">Year</div>
-          <img className src={chevrondown} />
+          <img src={chevrondown} />
         </div>
         </div>
   )

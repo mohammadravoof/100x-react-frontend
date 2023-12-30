@@ -1,26 +1,35 @@
-import React, { useState }from 'react';
+import React, { useState , useContext}from 'react';
 import Button from '../../components/ui/Button';
 import Fieldset from '../../components/ui/Fieldset';
 import Steps from '../../components/ui/Steps';
 import Dobfetcher from '../../components/ui/Dobfetcher';
 import HeadingOfCreateAccout from '../../components/ui/HeadingOfCreateAccout';
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../context/UserContext";
 
 const Step1 = ( ) => {
-
-  
-
   const navigate = useNavigate();
-  return (
+  const { updateFormData } = useContext(UserContext);
 
+
+  const handleInputChange = (event, field) => {
+    const value = event.target.value;
+    updateFormData(field, value);
+  };
+
+
+
+
+  return (
+    <>
     <div className="flex items-center w-[390px] h-screen m-10 shrink-0 bg-neutral-1000 font-inter">
   
   <div className="flex w-[390px] h-[824px] pt-0 px-[15px] pb-5 flex-col items-start gap-3 shrink-0 ">
     <Steps onClick={() => navigate("/")}>1</Steps>
     <HeadingOfCreateAccout text="Create your account"></HeadingOfCreateAccout> 
     <div className="flex flex-col items-center gap-8 self-stretch">
-    <Fieldset text="Name" input="Name" />
-    <Fieldset text="Email" input="Email"/>
+    <Fieldset text="Name" input="Name" type="text" onChange={event => handleInputChange(event, 'name')}/>
+    <Fieldset text="Email" input="Email" type="text" onChange={event => handleInputChange(event, 'email')} />
       <div className="flex flex-col items-start gap-2 self-stretch">
         <div className="text-neutral-50 text-[15px] font-bold">Date of birth</div>
         <div className="self-stretch text-secondary text-sm/normal  ">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or <br /> something else.</div>
@@ -29,10 +38,12 @@ const Step1 = ( ) => {
 
     </div>
     <div className="flex py-20 px-5 flex-col justify-end items-center gap-[10px] self-stretch grow shrink-0 basis-0">
-    <Button variant="white" onClick={() => navigate("/Step2")}  >Create account</Button>
+    <Button variant="white" onClick={(e) => {
+      navigate("/Step2")}}  >Create account</Button>
     </div>
   </div>
 </div>
+</>
   )
 }
 

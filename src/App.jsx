@@ -8,7 +8,7 @@ import ComposeTweet from "./pages/compose-tweet/ComposeTweet"
 import UserProfile from "./pages/user-profile/UserProfile"
 import EditProfile from "./pages/user-profile/EditProfile"
 import { useState, useContext } from "react"
-// import { AuthProvider, AuthContext } from "./context/AuthProvider"
+import { UserProvider } from "../src/context/UserContext"
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 
@@ -54,20 +54,14 @@ const router = createBrowserRouter([
 
 
 function App() {
-  // const { isLoggedIn } = useContext(AuthContext);
+
 
   return (
-    // <AuthProvider>
-    // <div className="flex bg-neutral-1000">
-    //   <Login/>
-     
-    
-      
-    //  </div>
+    <UserProvider>
     <div className="flex items-center justify-center w-screen bg-neutral-1000">
     <RouterProvider router={router} />
     </div>
-    // </AuthProvider>
+   </UserProvider>
   )
 }
 
