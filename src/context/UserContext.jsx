@@ -5,7 +5,7 @@ export const UserContext = createContext();
 export const UserProvider = ({ children }) => {
 
 
-const[formData, setFormData] = useState({ name: '', email: '' });
+const[formData, setFormData] = useState({ name: '', email: '' , month: '' , day: '' , year: '' });
 
 const updateFormData = (field, value) => {
     setFormData(prevData => ({...prevData, [field]: value,}));

@@ -10,7 +10,7 @@ import { UserContext } from "../../context/UserContext"
 function Step2() {
   const navigate = useNavigate();
   const { formData } = useContext(UserContext);
-  // const dob = `${day} ${month} ${year}`;
+  const dob = `${formData.day} ${formData.month} ${formData.year}`;
   // const formValues = userData.formData;
 
   return (
@@ -21,9 +21,9 @@ function Step2() {
     <Steps onClick={() => navigate("/Step1")}>2</Steps>
     <HeadingOfCreateAccout text="Create your account"></HeadingOfCreateAccout> 
     <div className="flex flex-col items-center gap-8 self-stretch">
-        <Fieldset text="Name" input={formData.name}  icon={greenright}/>
-        <Fieldset text="Email" input={formData.email} icon={greenright}/>
-        <Fieldset text="Date of birth" input="00000" icon={greenright}/>
+        <Fieldset text="Name" input={formData.name}  icon={greenright} focused/>
+        <Fieldset text="Email" input={formData.email} icon={greenright} focused/>
+        <Fieldset text="Date of birth" input={dob} icon={greenright} focused/>
     </div>
     <div className="flex py-20 flex-col justify-end items-center gap-5 self-stretch grow shrink-0 basis-0">
     <Button variant="blue" onClick={() => navigate("/Step3")}>Sign up</Button>
