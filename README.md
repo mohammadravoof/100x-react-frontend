@@ -1,1 +1,1 @@
-Deployment link: https://mohammadravoof.github.io/100x-react-frontend/
+Deployment link: https://100xfrontend.netlify.app/Homefeed
