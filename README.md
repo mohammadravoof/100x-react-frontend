@@ -1,1 +1,1 @@
-Deployment link: https://100xfrontend.netlify.app/Homefeed
+Deployment link: https://100xfrontend.netlify.app
